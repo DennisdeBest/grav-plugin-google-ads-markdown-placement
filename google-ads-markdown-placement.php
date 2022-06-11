@@ -72,8 +72,9 @@ class GoogleAdsMarkdownPlacementPlugin extends Plugin
                 $inlineOptions = $this->getInlineValues($options[0]);
 
                 $options = array_merge($this->getTemplateRenderingConfigurationVariables($config), $inlineOptions);
+
                 // process the template
-                $markup = $twig->processTemplate('add.html.twig', $options);
+                $markup = $twig->processTemplate('g-ad.html.twig', $options);
 
                 // replace the old content with the processed one
                 $newRaw = str_replace($instance, $markup, $page->getRawContent());

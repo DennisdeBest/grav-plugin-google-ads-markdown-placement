@@ -59,7 +59,7 @@ You can override these settings for every tag that you render :
 ```markdown
 > this is my markdown file
 
-Look at this add
+Look at this ad
 
 <g-ad [adClient=my-other-ad-client adSlot=1234596 adFormat=auto adClass=customClass]/>
 
