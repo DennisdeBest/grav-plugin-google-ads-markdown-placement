@@ -1,0 +1,11 @@
+en:
+  PLUGIN_GOOGLE_ADS_MARKDOWN_PLACEMENT:
+    AD_CLIENT: Publisher ID
+    AD_CLIENT_HELP: Your google publisher ID
+    AD_SLOT: Ad Slot
+    AD_SLOT_HELP: The ad slot for the ad
+    AD_FORMAT: Ad format
+    AD_FORMAT_HELP: The add format
+    AD_CLASS: ad div CSS class
+    AD_CLASS_HELP: Add a CSS class to the div wrapping the ad
+

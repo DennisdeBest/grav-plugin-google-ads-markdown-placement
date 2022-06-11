@@ -1,0 +1,29 @@
+{
+  "name": "dennisdebest/google-ads-markdown-placement",
+  "type": "grav-plugin",
+  "description": "Add google ads inside the markdown rendering",
+  "keywords": ["plugin"],
+  "homepage": "https://github.com/dennisdebest/grav-plugin-google-ads-markdown-placement",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "DennisdeBest",
+      "email": "dennis@codebuds.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\GoogleAdsMarkdownPlacement\\": "classes/"
+    },
+    "classmap":  ["google-ads-markdown-placement.php"]
+  },
+  "config": {
+    "platform": {
+      "php": "7.1.3"
+    }
+  }
+}

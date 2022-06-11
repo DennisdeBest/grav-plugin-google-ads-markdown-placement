@@ -1,0 +1,48 @@
+name: Google Ads Markdown Placement
+slug: google-ads-markdown-placement
+type: plugin
+version: 0.1.0
+description: Add google ads inside the markdown rendering
+icon: plug
+author:
+  name: DennisdeBest
+  email: dennis@codebuds.com
+homepage: https://github.com/dennisdebest/grav-plugin-google-ads-markdown-placement
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/dennisdebest/grav-plugin-google-ads-markdown-placement/issues
+docs: https://github.com/dennisdebest/grav-plugin-google-ads-markdown-placement/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    ad_client:
+      type: text
+      label: PLUGIN_GOOGLE_ADS_MARKDOWN_PLACEMENT.AD_CLIENT
+      help: PLUGIN_GOOGLE_ADS_MARKDOWN_PLACEMENT.AD_CLIENT_HELP
+    ad_slot:
+      type: text
+      label: PLUGIN_GOOGLE_ADS_MARKDOWN_PLACEMENT.AD_SLOT
+      help: PLUGIN_GOOGLE_ADS_MARKDOWN_PLACEMENT.AD_SLOT_HELP
+    ad_format:
+      type: text
+      label: PLUGIN_GOOGLE_ADS_MARKDOWN_PLACEMENT.AD_FORMAT
+      help: PLUGIN_GOOGLE_ADS_MARKDOWN_PLACEMENT.AD_FORMAT_HELP
+    ad_class:
+      type: text
+      label: PLUGIN_GOOGLE_ADS_MARKDOWN_PLACEMENT.AD_CLASS
+      help: PLUGIN_GOOGLE_ADS_MARKDOWN_PLACEMENT.AD_CLASS_HELP
